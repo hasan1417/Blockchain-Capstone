@@ -5,3 +5,35 @@
 
     
 // Test verification with incorrect proof
+const Verifier = artifacts.require('verifier');
+const proof = require('../../zokrates/code/square/proof.json');
+
+contract('Verifier', accounts => {
+    let contractOwner = accounts[0];
+    describe('test the Verifier', function () {
+
+        beforeEach(async function () {
+            this.contract = await Verifier.new({from: contractOwner});
+        })
+
+        it('test the correct proof', async function () {
+
+             let proofAccepted = await this.contract.verifyTx.call(proof.proof, proof.inputs, {
+                from: contractOwner,
+            });
+
+            assert.equal(proofAccepted, true, "Wrong proof");
+        })
+
+        it('test incorrect proof', async function () { 
+            const proofAccepted = await this.contract.verifyTx.call(proof.proof, [0,0], {
+                from: contractOwner,
+            });
+
+            assert.equal(proofAccepted, false, "invalid proof");
+        });
+    })
+})
+
+
+
