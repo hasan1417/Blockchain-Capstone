@@ -1,21 +1,52 @@
-# Udacity Blockchain Capstone
 
-The capstone will build upon the knowledge you have gained in the course in order to build a decentralized housing product. 
 
-# Project Resources
+Marketplace front store link https://testnets.opensea.io/collection/unidentified-contract-jn1xsw6fwn
 
-* [Remix - Solidity IDE](https://remix.ethereum.org/)
-* [Visual Studio Code](https://code.visualstudio.com/)
-* [Truffle Framework](https://truffleframework.com/)
-* [Ganache - One Click Blockchain](https://truffleframework.com/ganache)
-* [Open Zeppelin ](https://openzeppelin.org/)
-* [Interactive zero knowledge 3-colorability demonstration](http://web.mit.edu/~ezyang/Public/graph/svg.html)
-* [Docker](https://docs.docker.com/install/)
-* [ZoKrates](https://github.com/Zokrates/ZoKrates)
+2_deploy_contracts.js
+=====================
 
-0x31A18a673891032bEdDB426A4B380D83ACbDD522
+   Replacing 'Verifier'
+   --------------------
+   > transaction hash:    0xc2578834cc860ea6e0a1f88ec184ea346b13e84ea4877bcab2426f976bc52692
+   > Blocks: 1            Seconds: 9
+   > contract address:    0xAEF5d99cbC04afF9de5C86C6D576FB9b63caB961
+   > block number:        10020830
+   > block timestamp:     1642633864
+   > account:             0x20f2E66DA9315D447b22059F154ed1E016d41369
+   > balance:             3.56758859040473844
+   > gas used:            979344 (0xef190)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00979344 ETH
 
-ABI= [
+
+   Replacing 'SolnSquareVerifier'
+   ------------------------------
+   > transaction hash:    0xa9ba5df5711182094c1852dcc6a9dcaca125f35f029827adf0f597640ffacd53
+   > Blocks: 1            Seconds: 6
+   > contract address:    0x69fe1C260DbE97a89DD897F0a23283d7B60a0581
+   > block number:        10020831
+   > block timestamp:     1642633879
+   > account:             0x20f2E66DA9315D447b22059F154ed1E016d41369
+   > balance:             3.53270228040473844
+   > gas used:            3488631 (0x353b77)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.03488631 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.04467975 ETH
+
+
+Summary
+=======
+> Total deployments:   3
+> Final cost:          0.04694512 ETH
+
+ABI=[
     {
       "inputs": [
         {
@@ -796,4 +827,22 @@ ABI= [
       "type": "function"
     }
   ]
+
+
+
+# Udacity Blockchain Capstone
+
+The capstone will build upon the knowledge you have gained in the course in order to build a decentralized housing product. 
+
+# Project Resources
+
+* [Remix - Solidity IDE](https://remix.ethereum.org/)
+* [Visual Studio Code](https://code.visualstudio.com/)
+* [Truffle Framework](https://truffleframework.com/)
+* [Ganache - One Click Blockchain](https://truffleframework.com/ganache)
+* [Open Zeppelin ](https://openzeppelin.org/)
+* [Interactive zero knowledge 3-colorability demonstration](http://web.mit.edu/~ezyang/Public/graph/svg.html)
+* [Docker](https://docs.docker.com/install/)
+* [ZoKrates](https://github.com/Zokrates/ZoKrates)
+
 

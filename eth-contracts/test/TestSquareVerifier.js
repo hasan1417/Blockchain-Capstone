@@ -6,7 +6,7 @@
     
 // Test verification with incorrect proof
 const Verifier = artifacts.require('verifier');
-const proof = require('../../zokrates/code/square/proof.json');
+const proof = require('./proof.json');
 
 contract('Verifier', accounts => {
     let contractOwner = accounts[0];
