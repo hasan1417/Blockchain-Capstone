@@ -1,7 +1,31 @@
+Deployment and Testing
+
+Do the following to test the procjet:
+
+First - Clone the project and run: npm i
+Second - cd to the eth-contracts folder and run: truffle compile
+Third - to run the tests run the following commands: truflle develop and then test
+Fourth - Edit truffle-config.js to deploy your contract on the Rinkeby test network
+    const mnemonic = ""; // write your wallet mnemonic
+fifth - Migrate & deploy the contracts in the Rinkeby testnet by running the following commands: truffle migrate --network rinkeby
+sixth - Mint tokens (via https://www.myetherwallet.com/ following this tutorial https://www.youtube.com/watch?v=8MChn-NJJB0)
+seventh - Create a marketplace front store on Opensea by using the contract Address.
+
+
+
+Contract Owner Address 
+
+0xF722D24a94c5576b280A4ED57726A5659ECaEb91
+
+Buyer's Address
+
+0x20f2E66DA9315D447b22059F154ed1E016d41369
+
+Rinkeby transactions - etherscan
 
 
 Marketplace front store link https://testnets.opensea.io/collection/unidentified-contract-jn1xsw6fwn
-
+s
 2_deploy_contracts.js
 =====================
 
